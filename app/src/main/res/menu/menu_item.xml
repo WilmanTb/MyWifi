@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/home"
+        android:title="Home"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/gangguan"
+        android:title="Gangguan"
+        android:icon="@drawable/file"/>
+
+    <item
+        android:id="@+id/speed"
+        android:title="Speed test"
+        android:icon="@drawable/speed"/>
+
+    <item
+        android:id="@+id/profile"
+        android:icon="@drawable/user"
+        android:title="Profile"/>
+</menu>

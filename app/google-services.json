@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "318611596044",
+    "project_id": "my-wifi-626bb",
+    "storage_bucket": "my-wifi-626bb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:318611596044:android:aa8ae768e7a4c9a00cdf29",
+        "android_client_info": {
+          "package_name": "com.mywifi.mywifi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "318611596044-uscnos7455gqpnrbj3thuf9ltcet6v62.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDu2yvD69d50kttXHKUdamALwswO6OPuBk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "318611596044-uscnos7455gqpnrbj3thuf9ltcet6v62.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

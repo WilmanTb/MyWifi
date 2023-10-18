@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- <uses-permission android:name="android.permission.CAMERA"/> -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MyWifi"
+        tools:replace="android:allowBackup"
+        tools:targetApi="31">
+        <activity
+            android:name=".Activity.admin.Activity_Teknisi"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Laporan_Maintenance"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Detail_Laporan_User"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Laporan_Data_Pelanggan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Laporan_Pemasangan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Detail_Transaksi_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Detail_Upgrade_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Detail_Verifikasi_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Detail_Laporan_Gangguan_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Create_Maintenance"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Update_Maintenance"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Actitivy_Detail_Pesanan_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Upgrade_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Verifikasi_Akun_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Laporan_Gangguan_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Maintenance_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Transaksi_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Activity_Pemasangan_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.admin.Dashboard_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Buat_Laporan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Detail_Gangguan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Upload_Ktp"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Ganti_Username"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Tentang_Aplikasi"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Current_Layanan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Verifikasi_Akun"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Edit_Profil"
+            android:exported="false" />
+        <activity
+            android:name=".Test"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Detail_Maintenance_User"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Detail_Pembayaran_User"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Maintenance_User"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Kirim_Permintaan_Upgrade"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Detail_Upgrade_User"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Upgrade"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Pembayaran_User"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Detail_Layanan"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Activity_Layanan_Internet"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.user.Dashboard_User_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.auth.Register_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.auth.Login_Activity"
+            android:exported="false" />
+        <activity
+            android:name=".Activity.auth.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_path" />
+        </provider>
+    </application>
+
+</manifest>

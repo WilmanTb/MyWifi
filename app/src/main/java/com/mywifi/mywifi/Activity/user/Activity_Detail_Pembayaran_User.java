@@ -184,37 +184,9 @@ public class Activity_Detail_Pembayaran_User extends AppCompatActivity implement
         return request;
     }
 
-
-//    @Override
-//    public void onTransactionFinished(TransactionResult result) {
-//        if (result.getResponse() != null) {
-//            switch (result.getStatus()) {
-//                case TransactionResult.STATUS_SUCCESS:
-//                    Toast.makeText(this, "Transaction Finished. ID: " + result.getResponse().getTransactionId(), Toast.LENGTH_LONG).show();
-//                    break;
-//                case TransactionResult.STATUS_PENDING:
-//                    Toast.makeText(this, "Transaction Pending. ID: " + result.getResponse().getTransactionId(), Toast.LENGTH_LONG).show();
-//                    break;
-//                case TransactionResult.STATUS_FAILED:
-//                    Toast.makeText(this, "Transaction Failed. ID: " + result.getResponse().getTransactionId() + ". Message: " + result.getResponse().getStatusMessage(), Toast.LENGTH_LONG).show();
-//                    break;
-//            }
-//            result.getResponse().getTransactionStatus();
-//        } else if (result.isTransactionCanceled()) {
-//            Toast.makeText(this, "Transaction Canceled", Toast.LENGTH_LONG).show();
-//        } else {
-//            if (result.getStatus().equalsIgnoreCase(TransactionResult.STATUS_INVALID)) {
-//                Toast.makeText(this, "Transaction Invalid", Toast.LENGTH_LONG).show();
-//            } else {
-//                Toast.makeText(this, "Transaction Finished with failure.", Toast.LENGTH_LONG).show();
-//            }
-//        }
-//
-//    }
-
     @Override
     public void onTransactionFinished(TransactionResult transactionResult) {
-        if (transactionResult.getStatus().equals("pending")) {
+        if (transactionResult.getStatus().equals("settlement")) {
            String basurl = "https://api.sandbox.midtrans.com/v2/";
            String transId = transactionResult.getResponse().getTransactionId();
            String status = "/status";
